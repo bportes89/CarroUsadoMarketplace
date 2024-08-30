@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace de Carros Usados</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.5.1/dist/ethers.umd.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>Marketplace de Carros Usados</h1>
+
+    <h2>Listar Carro</h2>
+    <form id="listarCarroForm">
+        <input type="text" id="marca" placeholder="Marca" required>
+        <input type="text" id="modelo" placeholder="Modelo" required>
+        <input type="number" id="ano" placeholder="Ano" required>
+        <input type="number" id="preco" placeholder="Preço (em wei)" required>
+        <button type="submit">Listar Carro</button>
+    </form>
+
+    <h2>Comprar Carro</h2>
+    <form id="comprarCarroForm">
+        <input type="number" id="carroId" placeholder="ID do Carro" required>
+        <input type="number" id="valorPagamento" placeholder="Valor (em wei)" required>
+        <button type="submit">Comprar Carro</button>
+    </form>
+
+    <h2>Carros Listados</h2>
+    <ul id="listaCarros"></ul>
+</body>
+</html>
